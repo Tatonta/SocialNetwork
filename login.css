@@ -1,0 +1,106 @@
+html, body, section {
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+  
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+
+  
+/* Pattern styles */
+.container {
+  display: flex;
+}
+  
+.left-half {
+  background-image: url("img/book.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #cfebfc;
+  flex: 1;
+}
+
+
+.left-half .intro {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 40px;
+
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro p {
+  margin: 10px;
+}
+
+.left-half .name{
+  font-family: 'Permanent Marker', cursive;
+  color: #5f9ea0;
+  margin-left: 40px;
+}
+  
+.right-half {
+  background-color: #5f9ea0;
+  flex: 1;    
+  display: flex;
+}
+
+label {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 15%;
+}
+
+
+input {
+    margin-right: 15%;
+}
+
+input[type='file'] {
+  
+  width: 157px;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:100vw;
+    background-image: linear-gradient(#5f9ea0, slategray);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+
+  body {
+    font-size: 14px;
+  }
+  .left-half {
+    display: none;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
