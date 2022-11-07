@@ -40,7 +40,7 @@
         
         if ($_POST["services"] == "video") { //API Youtube
             
-            $apikey = "AIzaSyB17MQ3R2g36-ykysCTfCc-sqqWLwuESJg";
+            $apikey = "";#UsePrivateAPIkey
             $search = rawurlencode($_POST["search"]);
 
 
@@ -60,7 +60,7 @@
 
         if ($_POST["services"] == "gif") { //API Youtube
             
-            $apikey = "3UdtXqRk2NNRovLCMVLaugkgbRNflZz0";
+            $apikey = "";#UsePrivateAPIkey
             $search = rawurlencode($_POST["search"]);
 
             $url = "http://api.giphy.com/v1/gifs/search?api_key=".$apikey."&q=".$search;
@@ -80,8 +80,8 @@
         if ($_POST["services"] == "music") { //API Spotify
             
             // Get Access_Token
-            $clientid = "ddac5ad4eeaf4b139bebbf65eb74527b";
-            $secret = "93f9fab4db384a5e853bee2a670c1995";
+            $clientid = ""#UsePrivateClientID;
+            $secret = ""#UsePrivateClientSecret;
 
             $body = "grant_type=client_credentials";
 
